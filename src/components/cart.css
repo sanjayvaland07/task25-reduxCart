@@ -1,0 +1,95 @@
+.cart{
+    width: 40%;
+    border: 1px solid black;
+    height:auto;
+    max-height: 70vh;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+}
+.cart::-webkit-scrollbar{
+    width: 5px;
+    height: 8px;
+    background-color: white;
+}
+.cart::-webkit-scrollbar-thumb{
+    background: grey;
+}
+.cart h2{
+    margin: 10px 0;
+}
+.cart table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+/* .cart table tr{
+    border: 1px solid rgba(86, 86, 86, 0.399);
+} */
+.cart table tr .qty-btn #plusbtn{
+    background-color: rgb(147, 255, 147);
+    border: 1px solid green;
+}
+.cart table tr .qty-btn #minusbtn{
+    background-color: rgb(255, 121, 121);
+    border: 1px solid red;
+}
+.cart table tr .qty-btn{
+    width: 150px;
+}
+.cart table tr .qty-btn button{
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+.cart table tr .tbl-img{
+    padding: 10px 0;
+    width: 80px;
+    height: 80px;
+}
+.cart table tr td img{
+    width: 100%;
+    height: 100%;
+}
+.cart table tfoot tr td{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.cart .main-td{
+    height: 50px;
+}
+.cart .main-btn{
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width:1200px) {
+    .cart{
+        width: 35%;
+        right: 30px;
+    }
+}
+@media screen and (max-width:540px) {
+    .cart{
+        position:static;
+        height: 100%;
+        width: 100%;
+    }
+    .cart table tr .qty-btn{
+        width: 80px;
+    }
+    .cart table tr td:nth-child(2){
+        font-size: .8rem;
+    }
+}
